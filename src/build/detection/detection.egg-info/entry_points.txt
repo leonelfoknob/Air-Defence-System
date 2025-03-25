@@ -1,0 +1,5 @@
+[console_scripts]
+green_color_detection_node = detection.green_color_detection_node:main
+red_color_detection_node = detection.red_color_detection_node:main
+shape_detection = detection.shape_detection:main
+

@@ -1,0 +1,7 @@
+[ 14%] Built target gtest_main
+[ 28%] Built target gtest
+[ 42%] Built target usb_cam
+[ 57%] Built target usb_cam_node_exe
+[ 71%] Built target test_usb_cam_utils
+[ 85%] Built target test_pixel_formats
+[ 92%] [32mBuilding CXX object CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o[0m

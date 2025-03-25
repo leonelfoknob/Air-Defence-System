@@ -1,0 +1,6 @@
+Invoking command in '/home/esogu/ros2_ws/build/usb_cam': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/esogu/ros2_ws/src/usb_cam -DCMAKE_INSTALL_PREFIX=/home/esogu/ros2_ws/install/usb_cam
+Invoked command in '/home/esogu/ros2_ws/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/esogu/ros2_ws/src/usb_cam -DCMAKE_INSTALL_PREFIX=/home/esogu/ros2_ws/install/usb_cam
+Invoking command in '/home/esogu/ros2_ws/build/usb_cam': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/esogu/ros2_ws/build/usb_cam -- -j20 -l20
+Invoked command in '/home/esogu/ros2_ws/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/esogu/ros2_ws/build/usb_cam -- -j20 -l20
+Invoking command in '/home/esogu/ros2_ws/build/usb_cam': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/esogu/ros2_ws/build/usb_cam
+Invoked command in '/home/esogu/ros2_ws/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/esogu/ros2_ws/build/usb_cam

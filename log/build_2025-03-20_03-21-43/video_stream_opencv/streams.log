@@ -1,0 +1,41 @@
+[0.007s] Invoking command in '/home/esogu/ros2_ws/build/video_stream_opencv': /usr/bin/cmake /home/esogu/ros2_ws/src/video_stream_opencv -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/esogu/ros2_ws/install/video_stream_opencv
+[0.025s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.025s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.025s]   CMake.
+[0.025s] 
+[0.025s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.025s]   CMake that the project does not need compatibility with older versions.
+[0.025s] 
+[0.025s] [0m
+[0.136s] -- The C compiler identification is GNU 11.4.0
+[0.230s] -- The CXX compiler identification is GNU 11.4.0
+[0.239s] -- Detecting C compiler ABI info
+[0.321s] -- Detecting C compiler ABI info - done
+[0.328s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.329s] -- Detecting C compile features
+[0.330s] -- Detecting C compile features - done
+[0.336s] -- Detecting CXX compiler ABI info
+[0.414s] -- Detecting CXX compiler ABI info - done
+[0.424s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.424s] -- Detecting CXX compile features
+[0.424s] -- Detecting CXX compile features - done
+[0.431s] -- Configuring incomplete, errors occurred!
+[0.431s] See also "/home/esogu/ros2_ws/build/video_stream_opencv/CMakeFiles/CMakeOutput.log".
+[0.431s] [31mCMake Error at CMakeLists.txt:5 (find_package):
+[0.431s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.431s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.431s]   CMake did not find one.
+[0.431s] 
+[0.431s]   Could not find a package configuration file provided by "catkin" with any
+[0.431s]   of the following names:
+[0.431s] 
+[0.431s]     catkinConfig.cmake
+[0.431s]     catkin-config.cmake
+[0.431s] 
+[0.431s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.431s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.431s]   provides a separate development package or SDK, be sure it has been
+[0.431s]   installed.
+[0.431s] 
+[0.431s] [0m
+[0.433s] Invoked command in '/home/esogu/ros2_ws/build/video_stream_opencv' returned '1': /usr/bin/cmake /home/esogu/ros2_ws/src/video_stream_opencv -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/esogu/ros2_ws/install/video_stream_opencv

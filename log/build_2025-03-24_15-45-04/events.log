@@ -1,0 +1,847 @@
+[0.000000] (-) TimerEvent: {}
+[0.000699] (detection) JobQueued: {'identifier': 'detection', 'dependencies': OrderedDict()}
+[0.000749] (realsense2_camera_msgs) JobQueued: {'identifier': 'realsense2_camera_msgs', 'dependencies': OrderedDict()}
+[0.000770] (usb_cam) JobQueued: {'identifier': 'usb_cam', 'dependencies': OrderedDict()}
+[0.000787] (realsense2_camera) JobQueued: {'identifier': 'realsense2_camera', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/esogu/ros2_ws/install/realsense2_camera_msgs')])}
+[0.000805] (realsense2_description) JobQueued: {'identifier': 'realsense2_description', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/esogu/ros2_ws/install/realsense2_camera_msgs')])}
+[0.000822] (realsense2_camera_msgs) JobStarted: {'identifier': 'realsense2_camera_msgs'}
+[0.006447] (detection) JobStarted: {'identifier': 'detection'}
+[0.011211] (usb_cam) JobStarted: {'identifier': 'usb_cam'}
+[0.016065] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'cmake'}
+[0.016594] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'build'}
+[0.017302] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/esogu/ros2_ws/build/realsense2_camera_msgs', '--', '-j8', '-l8'], 'cwd': '/home/esogu/ros2_ws/build/realsense2_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'esogu'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/esogu/ros2_ws/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/esogu'), ('OLDPWD', '/home/esogu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('diagnostic_updater_DIR', '/opt/ros/humble/share/diagnostic_updater'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('SYSTEMD_EXEC_PID', '1845'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/esogu/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'esogu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'esogu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/esogu-HP-ProDesk-490-G3-MT-Business-PC:@/tmp/.ICE-unix/1662,unix/esogu-HP-ProDesk-490-G3-MT-Business-PC:/tmp/.ICE-unix/1662'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1b0febbe_b307_4fa9_91e3_a1ff0bca85a9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.J9TX32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/esogu/ros2_ws/install/usb_cam:/home/esogu/ros2_ws/install/detection:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/esogu/ros2_ws/build/realsense2_camera_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/esogu/ros2_ws/install/detection/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/esogu/ros2_ws/install/usb_cam:/home/esogu/ros2_ws/install/detection')]), 'shell': False}
+[0.101121] (-) TimerEvent: {}
+[0.201415] (-) TimerEvent: {}
+[0.295636] (realsense2_camera_msgs) StdoutLine: {'line': b'[  1%] Built target realsense2_camera_msgs__cpp\n'}
+[0.296464] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 12%] Built target realsense2_camera_msgs__rosidl_generator_c\n'}
+[0.296711] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_realsense2_camera_msgs\n'}
+[0.297061] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 34%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.297334] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 34%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.297640] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 46%] Built target realsense2_camera_msgs__rosidl_typesupport_cpp\n'}
+[0.297996] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 57%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c\n'}
+[0.298263] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 68%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.298472] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 79%] Built target realsense2_camera_msgs__rosidl_typesupport_c\n'}
+[0.298626] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 79%] Built target realsense2_camera_msgs\n'}
+[0.298918] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 80%] Built target realsense2_camera_msgs__py\n'}
+[0.299893] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 90%] Built target realsense2_camera_msgs__rosidl_generator_py\n'}
+[0.300424] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 93%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.300607] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 96%] Built target realsense2_camera_msgs__rosidl_typesupport_c__pyext\n'}
+[0.301194] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.301426] (-) TimerEvent: {}
+[0.301774] (usb_cam) JobProgress: {'identifier': 'usb_cam', 'progress': 'cmake'}
+[0.301826] (usb_cam) JobProgress: {'identifier': 'usb_cam', 'progress': 'build'}
+[0.301883] (usb_cam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/esogu/ros2_ws/build/usb_cam', '--', '-j8', '-l8'], 'cwd': '/home/esogu/ros2_ws/build/usb_cam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'esogu'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/esogu/ros2_ws/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/esogu'), ('OLDPWD', '/home/esogu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('diagnostic_updater_DIR', '/opt/ros/humble/share/diagnostic_updater'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('SYSTEMD_EXEC_PID', '1845'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/esogu/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'esogu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'esogu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/esogu-HP-ProDesk-490-G3-MT-Business-PC:@/tmp/.ICE-unix/1662,unix/esogu-HP-ProDesk-490-G3-MT-Business-PC:/tmp/.ICE-unix/1662'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1b0febbe_b307_4fa9_91e3_a1ff0bca85a9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.J9TX32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/esogu/ros2_ws/install/usb_cam:/home/esogu/ros2_ws/install/detection:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/esogu/ros2_ws/build/usb_cam'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/esogu/ros2_ws/install/detection/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/esogu/ros2_ws/install/usb_cam:/home/esogu/ros2_ws/install/detection')]), 'shell': False}
+[0.348956] (realsense2_camera_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.349751] (realsense2_camera_msgs) StdoutLine: {'line': b'writing realsense2_camera_msgs.egg-info/PKG-INFO\n'}
+[0.349989] (realsense2_camera_msgs) StdoutLine: {'line': b'writing dependency_links to realsense2_camera_msgs.egg-info/dependency_links.txt\n'}
+[0.350212] (realsense2_camera_msgs) StdoutLine: {'line': b'writing top-level names to realsense2_camera_msgs.egg-info/top_level.txt\n'}
+[0.352627] (realsense2_camera_msgs) StdoutLine: {'line': b"reading manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'\n"}
+[0.353585] (realsense2_camera_msgs) StdoutLine: {'line': b"writing manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'\n"}
+[0.360251] (usb_cam) StdoutLine: {'line': b'[ 14%] Built target gtest_main\n'}
+[0.363203] (usb_cam) StdoutLine: {'line': b'[ 28%] Built target usb_cam\n'}
+[0.363668] (usb_cam) StdoutLine: {'line': b'[ 42%] Built target gtest\n'}
+[0.367864] (usb_cam) StdoutLine: {'line': b'[ 57%] Built target usb_cam_node_exe\n'}
+[0.383126] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_realsense2_camera_msgs_egg\n'}
+[0.392381] (usb_cam) StdoutLine: {'line': b'[ 71%] Built target test_pixel_formats\n'}
+[0.394874] (usb_cam) StdoutLine: {'line': b'[ 85%] Built target usb_cam_node\n'}
+[0.396159] (realsense2_camera_msgs) CommandEnded: {'returncode': 0}
+[0.396717] (usb_cam) StdoutLine: {'line': b'[100%] Built target test_usb_cam_utils\n'}
+[0.397275] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'install'}
+[0.401622] (-) TimerEvent: {}
+[0.406162] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/esogu/ros2_ws/build/realsense2_camera_msgs'], 'cwd': '/home/esogu/ros2_ws/build/realsense2_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'esogu'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/esogu/ros2_ws/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/esogu'), ('OLDPWD', '/home/esogu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('diagnostic_updater_DIR', '/opt/ros/humble/share/diagnostic_updater'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('SYSTEMD_EXEC_PID', '1845'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/esogu/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'esogu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'esogu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/esogu-HP-ProDesk-490-G3-MT-Business-PC:@/tmp/.ICE-unix/1662,unix/esogu-HP-ProDesk-490-G3-MT-Business-PC:/tmp/.ICE-unix/1662'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1b0febbe_b307_4fa9_91e3_a1ff0bca85a9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.J9TX32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/esogu/ros2_ws/install/usb_cam:/home/esogu/ros2_ws/install/detection:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/esogu/ros2_ws/build/realsense2_camera_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/esogu/ros2_ws/install/detection/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/esogu/ros2_ws/install/usb_cam:/home/esogu/ros2_ws/install/detection')]), 'shell': False}
+[0.408385] (usb_cam) CommandEnded: {'returncode': 0}
+[0.409401] (usb_cam) JobProgress: {'identifier': 'usb_cam', 'progress': 'install'}
+[0.410092] (usb_cam) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/esogu/ros2_ws/build/usb_cam'], 'cwd': '/home/esogu/ros2_ws/build/usb_cam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'esogu'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/esogu/ros2_ws/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/esogu'), ('OLDPWD', '/home/esogu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('diagnostic_updater_DIR', '/opt/ros/humble/share/diagnostic_updater'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('SYSTEMD_EXEC_PID', '1845'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/esogu/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'esogu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'esogu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/esogu-HP-ProDesk-490-G3-MT-Business-PC:@/tmp/.ICE-unix/1662,unix/esogu-HP-ProDesk-490-G3-MT-Business-PC:/tmp/.ICE-unix/1662'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1b0febbe_b307_4fa9_91e3_a1ff0bca85a9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.J9TX32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/esogu/ros2_ws/install/usb_cam:/home/esogu/ros2_ws/install/detection:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/esogu/ros2_ws/build/usb_cam'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/esogu/ros2_ws/install/detection/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/esogu/ros2_ws/install/usb_cam:/home/esogu/ros2_ws/install/detection')]), 'shell': False}
+[0.415971] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.416243] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/ament_index/resource_index/rosidl_interfaces/realsense2_camera_msgs\n'}
+[0.416469] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs\n'}
+[0.416738] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv\n'}
+[0.416878] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail\n'}
+[0.417003] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__functions.c\n'}
+[0.417164] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__functions.h\n'}
+[0.417437] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__struct.h\n'}
+[0.417566] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.h\n'}
+[0.417671] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/device_info.h\n'}
+[0.417768] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg\n'}
+[0.417872] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/extrinsics.h\n'}
+[0.417978] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/metadata.h\n'}
+[0.418157] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/imu_info.h\n'}
+[0.418321] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail\n'}
+[0.418440] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__type_support.h\n'}
+[0.418641] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__type_support.h\n'}
+[0.418768] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__type_support.h\n'}
+[0.418903] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__struct.h\n'}
+[0.419051] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__functions.h\n'}
+[0.419462] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__functions.c\n'}
+[0.419784] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__struct.h\n'}
+[0.419944] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__struct.h\n'}
+[0.420073] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__type_support.h\n'}
+[0.420387] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__functions.h\n'}
+[0.420539] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__functions.h\n'}
+[0.420676] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__functions.h\n'}
+[0.420825] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__struct.h\n'}
+[0.420985] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__functions.c\n'}
+[0.421132] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__functions.c\n'}
+[0.421459] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__functions.c\n'}
+[0.421608] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.421762] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rgbd.h\n'}
+[0.421890] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/library_path.sh\n'}
+[0.422021] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/library_path.dsv\n'}
+[0.422164] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_c.so\n'}
+[0.422359] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs\n'}
+[0.422484] (usb_cam) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.422883] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv\n'}
+[0.423021] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/environment/library_path.sh\n'}
+[0.423334] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/environment/library_path.dsv\n'}
+[0.423540] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/lib/usb_cam/usb_cam_node_exe\n'}
+[0.423750] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/lib/usb_cam/show_image.py\n'}
+[0.423925] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail\n'}
+[0.424195] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_fastrtps_c.h\n'}
+[0.424317] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg\n'}
+[0.424448] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.424571] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail\n'}
+[0.424688] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_c.h\n'}
+[0.424805] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_c.h\n'}
+[0.424939] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_fastrtps_c.h\n'}
+[0.425061] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_fastrtps_c.h\n'}
+[0.425214] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.425426] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs\n'}
+[0.425526] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv\n'}
+[0.425621] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail\n'}
+[0.425744] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.c\n'}
+[0.425895] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_introspection_c.h\n'}
+[0.425990] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg\n'}
+[0.426085] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail\n'}
+[0.426528] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/lib/libusb_cam.so\n'}
+[0.426936] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/lib/libusb_cam_node.so\n'}
+[0.427123] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_c.h\n'}
+[0.427195] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__type_support.c\n'}
+[0.427257] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__type_support.c\n'}
+[0.427315] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_introspection_c.h\n'}
+[0.427566] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_introspection_c.h\n'}
+[0.427625] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_c.h\n'}
+[0.427682] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__type_support.c\n'}
+[0.427739] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__type_support.c\n'}
+[0.427795] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.427989] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.428050] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/include\n'}
+[0.428199] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/include/usb_cam\n'}
+[0.428291] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/include/usb_cam/usb_cam.hpp\n'}
+[0.428349] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/include/usb_cam/formats\n'}
+[0.428406] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/include/usb_cam/formats/uyvy.hpp\n'}
+[0.428462] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/include/usb_cam/formats/rgb.hpp\n'}
+[0.428519] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/include/usb_cam/formats/yuyv.hpp\n'}
+[0.428575] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/include/usb_cam/formats/m420.hpp\n'}
+[0.428631] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/include/usb_cam/formats/pixel_format_base.hpp\n'}
+[0.428688] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/include/usb_cam/formats/av_pixel_format_helper.hpp\n'}
+[0.428745] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/include/usb_cam/formats/mono.hpp\n'}
+[0.428801] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/include/usb_cam/formats/mjpeg.hpp\n'}
+[0.428857] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/include/usb_cam/formats/utils.hpp\n'}
+[0.428913] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/include/usb_cam/usb_cam_node.hpp\n'}
+[0.428969] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/include/usb_cam/constants.hpp\n'}
+[0.429024] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/include/usb_cam/conversions.hpp\n'}
+[0.429080] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/include/usb_cam/utils.hpp\n'}
+[0.429198] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_c.so\n'}
+[0.429355] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs\n'}
+[0.429474] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv\n'}
+[0.429530] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/device_info.hpp\n'}
+[0.429586] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail\n'}
+[0.429642] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__builder.hpp\n'}
+[0.429698] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/lib/libusb_cam_node.so\n'}
+[0.429791] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/launch\n'}
+[0.429848] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/launch/__init__.py\n'}
+[0.429905] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/launch/camera_config.py\n'}
+[0.429960] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/launch/camera.launch.py\n'}
+[0.430015] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/config\n'}
+[0.430071] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/config/camera_info.yaml\n'}
+[0.430139] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/config/params_1.yaml\n'}
+[0.430219] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/config/params_2.yaml\n'}
+[0.430276] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.hpp\n'}
+[0.430445] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/ament_index/resource_index/package_run_dependencies/usb_cam\n'}
+[0.430642] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/ament_index/resource_index/parent_prefix_path/usb_cam\n'}
+[0.430898] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/environment/ament_prefix_path.sh\n'}
+[0.431088] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/environment/ament_prefix_path.dsv\n'}
+[0.431414] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/environment/path.sh\n'}
+[0.431663] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/environment/path.dsv\n'}
+[0.431989] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__struct.hpp\n'}
+[0.432135] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__traits.hpp\n'}
+[0.432485] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg\n'}
+[0.432731] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/metadata.hpp\n'}
+[0.432875] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.433135] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/extrinsics.hpp\n'}
+[0.433239] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/imu_info.hpp\n'}
+[0.433324] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail\n'}
+[0.433383] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__traits.hpp\n'}
+[0.433442] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__traits.hpp\n'}
+[0.433498] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__builder.hpp\n'}
+[0.433555] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__struct.hpp\n'}
+[0.433612] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__struct.hpp\n'}
+[0.433669] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__struct.hpp\n'}
+[0.433724] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__builder.hpp\n'}
+[0.433780] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__builder.hpp\n'}
+[0.433836] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__traits.hpp\n'}
+[0.433893] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__traits.hpp\n'}
+[0.433949] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__type_support.hpp\n'}
+[0.434010] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__struct.hpp\n'}
+[0.434066] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__type_support.hpp\n'}
+[0.434132] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__type_support.hpp\n'}
+[0.434201] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__type_support.hpp\n'}
+[0.434258] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__builder.hpp\n'}
+[0.434383] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rgbd.hpp\n'}
+[0.434439] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs\n'}
+[0.434496] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv\n'}
+[0.434552] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/local_setup.bash\n'}
+[0.434634] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/local_setup.sh\n'}
+[0.434691] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/local_setup.zsh\n'}
+[0.434748] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail\n'}
+[0.434805] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.434862] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/dds_fastrtps\n'}
+[0.434918] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg\n'}
+[0.435020] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail\n'}
+[0.435077] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.435154] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.435228] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/dds_fastrtps\n'}
+[0.435283] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.435338] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.435393] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.435476] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.435569] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/local_setup.dsv\n'}
+[0.435685] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/package.dsv\n'}
+[0.435775] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/ament_index/resource_index/packages/usb_cam\n'}
+[0.435845] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/ament_index/resource_index/rclcpp_components/usb_cam\n'}
+[0.435927] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.436043] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs\n'}
+[0.436100] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv\n'}
+[0.436196] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail\n'}
+[0.436381] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.cpp\n'}
+[0.436439] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.436495] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg\n'}
+[0.436578] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail\n'}
+[0.436636] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__type_support.cpp\n'}
+[0.436692] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.436749] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__type_support.cpp\n'}
+[0.436805] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.436860] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.437000] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__type_support.cpp\n'}
+[0.437058] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.437120] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.437209] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.437346] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/cmake/usb_camConfig.cmake\n'}
+[0.437405] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/cmake/usb_camConfig-version.cmake\n'}
+[0.437461] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/usb_cam/share/usb_cam/package.xml\n'}
+[0.437517] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__type_support.cpp\n'}
+[0.437578] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.437633] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_cpp.so\n'}
+[0.437689] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/pythonpath.sh\n'}
+[0.437745] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/pythonpath.dsv\n'}
+[0.437807] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info\n'}
+[0.437863] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info/SOURCES.txt\n'}
+[0.437919] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info/top_level.txt\n'}
+[0.437974] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info/PKG-INFO\n'}
+[0.438030] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info/dependency_links.txt\n'}
+[0.438086] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs\n'}
+[0.438216] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.438292] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.438350] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[0.438406] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/__init__.py\n'}
+[0.438462] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.438522] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv\n'}
+[0.438579] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_device_info.py\n'}
+[0.438635] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/__init__.py\n'}
+[0.438691] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_device_info_s.c\n'}
+[0.438750] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/librealsense2_camera_msgs__rosidl_generator_py.so\n'}
+[0.438806] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.438862] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg\n'}
+[0.438918] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_imu_info.py\n'}
+[0.438973] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_metadata_s.c\n'}
+[0.439029] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_extrinsics_s.c\n'}
+[0.439085] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/__init__.py\n'}
+[0.439270] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_metadata.py\n'}
+[0.439399] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_extrinsics.py\n'}
+[0.439456] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_rgbd.py\n'}
+[0.439512] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_imu_info_s.c\n'}
+[0.439568] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_rgbd_s.c\n'}
+[0.439644] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.439702] (usb_cam) CommandEnded: {'returncode': 0}
+[0.455839] (usb_cam) JobEnded: {'identifier': 'usb_cam', 'rc': 0}
+[0.460273] (realsense2_camera_msgs) StdoutLine: {'line': b"Listing '/home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs'...\n"}
+[0.460449] (realsense2_camera_msgs) StdoutLine: {'line': b"Listing '/home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg'...\n"}
+[0.460522] (realsense2_camera_msgs) StdoutLine: {'line': b"Listing '/home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv'...\n"}
+[0.465496] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.465955] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.466511] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.466957] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_py.so\n'}
+[0.467306] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/IMUInfo.idl\n'}
+[0.467478] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Extrinsics.idl\n'}
+[0.467615] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Metadata.idl\n'}
+[0.467697] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/RGBD.idl\n'}
+[0.467756] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo.idl\n'}
+[0.467862] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/IMUInfo.msg\n'}
+[0.467978] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Extrinsics.msg\n'}
+[0.468038] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Metadata.msg\n'}
+[0.468096] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/RGBD.msg\n'}
+[0.468261] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo.srv\n'}
+[0.468337] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo_Request.msg\n'}
+[0.468399] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo_Response.msg\n'}
+[0.468457] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/ament_index/resource_index/package_run_dependencies/realsense2_camera_msgs\n'}
+[0.468550] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/ament_index/resource_index/parent_prefix_path/realsense2_camera_msgs\n'}
+[0.468654] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/ament_prefix_path.sh\n'}
+[0.468715] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/ament_prefix_path.dsv\n'}
+[0.468771] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/path.sh\n'}
+[0.468866] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/path.dsv\n'}
+[0.468925] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.bash\n'}
+[0.469025] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.sh\n'}
+[0.469104] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.zsh\n'}
+[0.469181] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.dsv\n'}
+[0.469241] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv\n'}
+[0.469335] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/ament_index/resource_index/packages/realsense2_camera_msgs\n'}
+[0.469386] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cExport.cmake\n'}
+[0.469442] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.469530] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.469619] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.469690] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.469761] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.469854] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.469922] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.470043] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.470181] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.470259] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.470351] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.470423] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.470554] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.470671] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.470820] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_pyExport.cmake\n'}
+[0.470900] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.470987] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.471077] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.471177] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.471302] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.471417] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.471518] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.471648] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.471788] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgsConfig.cmake\n'}
+[0.471878] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgsConfig-version.cmake\n'}
+[0.471967] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.xml\n'}
+[0.473884] (realsense2_camera_msgs) CommandEnded: {'returncode': 0}
+[0.489329] (realsense2_camera_msgs) JobEnded: {'identifier': 'realsense2_camera_msgs', 'rc': 0}
+[0.490528] (realsense2_camera) JobStarted: {'identifier': 'realsense2_camera'}
+[0.493459] (realsense2_description) JobStarted: {'identifier': 'realsense2_description'}
+[0.498413] (realsense2_camera) JobProgress: {'identifier': 'realsense2_camera', 'progress': 'cmake'}
+[0.500022] (realsense2_camera) Command: {'cmd': ['/usr/bin/cmake', '/home/esogu/ros2_ws/src/realsense-ros/realsense2_camera', '-DCMAKE_INSTALL_PREFIX=/home/esogu/ros2_ws/install/realsense2_camera'], 'cwd': '/home/esogu/ros2_ws/build/realsense2_camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'esogu'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/esogu/ros2_ws/install/realsense2_camera_msgs/lib:/home/esogu/ros2_ws/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/esogu'), ('OLDPWD', '/home/esogu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('diagnostic_updater_DIR', '/opt/ros/humble/share/diagnostic_updater'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('SYSTEMD_EXEC_PID', '1845'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/esogu/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'esogu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'esogu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/esogu-HP-ProDesk-490-G3-MT-Business-PC:@/tmp/.ICE-unix/1662,unix/esogu-HP-ProDesk-490-G3-MT-Business-PC:/tmp/.ICE-unix/1662'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1b0febbe_b307_4fa9_91e3_a1ff0bca85a9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.J9TX32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/esogu/ros2_ws/install/realsense2_camera_msgs:/home/esogu/ros2_ws/install/usb_cam:/home/esogu/ros2_ws/install/detection:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/esogu/ros2_ws/build/realsense2_camera'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/esogu/ros2_ws/install/detection/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/esogu/ros2_ws/install/realsense2_camera_msgs:/opt/ros/humble:/home/esogu/ros2_ws/install/usb_cam:/home/esogu/ros2_ws/install/detection')]), 'shell': False}
+[0.502371] (-) TimerEvent: {}
+[0.502485] (realsense2_description) JobProgress: {'identifier': 'realsense2_description', 'progress': 'cmake'}
+[0.503145] (realsense2_description) JobProgress: {'identifier': 'realsense2_description', 'progress': 'build'}
+[0.503437] (realsense2_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/esogu/ros2_ws/build/realsense2_description', '--', '-j8', '-l8'], 'cwd': '/home/esogu/ros2_ws/build/realsense2_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'esogu'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/esogu/ros2_ws/install/realsense2_camera_msgs/lib:/home/esogu/ros2_ws/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/esogu'), ('OLDPWD', '/home/esogu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('diagnostic_updater_DIR', '/opt/ros/humble/share/diagnostic_updater'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('SYSTEMD_EXEC_PID', '1845'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/esogu/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'esogu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'esogu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/esogu-HP-ProDesk-490-G3-MT-Business-PC:@/tmp/.ICE-unix/1662,unix/esogu-HP-ProDesk-490-G3-MT-Business-PC:/tmp/.ICE-unix/1662'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1b0febbe_b307_4fa9_91e3_a1ff0bca85a9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.J9TX32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/esogu/ros2_ws/install/realsense2_camera_msgs:/home/esogu/ros2_ws/install/usb_cam:/home/esogu/ros2_ws/install/detection:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/esogu/ros2_ws/build/realsense2_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/esogu/ros2_ws/install/detection/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/esogu/ros2_ws/install/realsense2_camera_msgs:/opt/ros/humble:/home/esogu/ros2_ws/install/usb_cam:/home/esogu/ros2_ws/install/detection')]), 'shell': False}
+[0.513480] (realsense2_camera) StdoutLine: {'line': b'-- Create Release Build.\n'}
+[0.513676] (realsense2_camera) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.546864] (realsense2_description) CommandEnded: {'returncode': 0}
+[0.547551] (realsense2_description) JobProgress: {'identifier': 'realsense2_description', 'progress': 'install'}
+[0.547930] (realsense2_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/esogu/ros2_ws/build/realsense2_description'], 'cwd': '/home/esogu/ros2_ws/build/realsense2_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'esogu'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/esogu/ros2_ws/install/realsense2_camera_msgs/lib:/home/esogu/ros2_ws/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/esogu'), ('OLDPWD', '/home/esogu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('diagnostic_updater_DIR', '/opt/ros/humble/share/diagnostic_updater'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('SYSTEMD_EXEC_PID', '1845'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/esogu/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'esogu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'esogu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/esogu-HP-ProDesk-490-G3-MT-Business-PC:@/tmp/.ICE-unix/1662,unix/esogu-HP-ProDesk-490-G3-MT-Business-PC:/tmp/.ICE-unix/1662'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1b0febbe_b307_4fa9_91e3_a1ff0bca85a9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.J9TX32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/esogu/ros2_ws/install/realsense2_camera_msgs:/home/esogu/ros2_ws/install/usb_cam:/home/esogu/ros2_ws/install/detection:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/esogu/ros2_ws/build/realsense2_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/esogu/ros2_ws/install/detection/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/esogu/ros2_ws/install/realsense2_camera_msgs:/opt/ros/humble:/home/esogu/ros2_ws/install/usb_cam:/home/esogu/ros2_ws/install/detection')]), 'shell': False}
+[0.556141] (realsense2_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.556674] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/launch\n'}
+[0.556817] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/launch/launch_utils.py\n'}
+[0.556959] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/launch/view_model.launch.py\n'}
+[0.557087] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/meshes\n'}
+[0.557411] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/l515.dae\n'}
+[0.557560] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/d435.dae\n'}
+[0.557711] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/plug.stl\n'}
+[0.557872] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/d405.stl\n'}
+[0.558023] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/d455.stl\n'}
+[0.558177] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/plug_collision.stl\n'}
+[0.558352] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/d415.stl\n'}
+[0.558455] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/rviz\n'}
+[0.558559] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/rviz/urdf.rviz\n'}
+[0.558665] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/urdf\n'}
+[0.558762] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_r410_camera.urdf.xacro\n'}
+[0.558867] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d435i_imu_modules.urdf.xacro\n'}
+[0.558965] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d435i_camera.urdf.xacro\n'}
+[0.559059] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d405_camera.urdf.xacro\n'}
+[0.559182] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d435_camera.urdf.xacro\n'}
+[0.559286] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d435i.urdf.xacro\n'}
+[0.559389] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_materials.urdf.xacro\n'}
+[0.559496] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_r430_camera.urdf.xacro\n'}
+[0.559604] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d435.urdf.xacro\n'}
+[0.559712] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d405.urdf.xacro\n'}
+[0.559822] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_r430.urdf.xacro\n'}
+[0.559933] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_r410.urdf.xacro\n'}
+[0.560043] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d455.urdf.xacro\n'}
+[0.560204] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_usb_plug.urdf.xacro\n'}
+[0.560512] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d415.urdf.xacro\n'}
+[0.560749] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d435_multiple_cameras.urdf.xacro\n'}
+[0.561357] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d455_camera.urdf.xacro\n'}
+[0.562345] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d415_camera.urdf.xacro\n'}
+[0.562603] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/ament_index/resource_index/package_run_dependencies/realsense2_description\n'}
+[0.562887] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/ament_index/resource_index/parent_prefix_path/realsense2_description\n'}
+[0.563084] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/environment/ament_prefix_path.sh\n'}
+[0.563347] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/environment/ament_prefix_path.dsv\n'}
+[0.563502] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/environment/path.sh\n'}
+[0.563732] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/environment/path.dsv\n'}
+[0.563893] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/local_setup.bash\n'}
+[0.564058] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/local_setup.sh\n'}
+[0.564265] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/local_setup.zsh\n'}
+[0.564401] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/local_setup.dsv\n'}
+[0.564551] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/package.dsv\n'}
+[0.564695] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/ament_index/resource_index/packages/realsense2_description\n'}
+[0.564842] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/cmake/realsense2_descriptionConfig.cmake\n'}
+[0.564996] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/cmake/realsense2_descriptionConfig-version.cmake\n'}
+[0.565514] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/esogu/ros2_ws/install/realsense2_description/share/realsense2_description/package.xml\n'}
+[0.565670] (realsense2_description) CommandEnded: {'returncode': 0}
+[0.575451] (realsense2_description) JobEnded: {'identifier': 'realsense2_description', 'rc': 0}
+[0.602487] (-) TimerEvent: {}
+[0.645770] (realsense2_camera) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.673228] (detection) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/detection', 'build', '--build-base', '/home/esogu/ros2_ws/build/detection/build', 'install', '--record', '/home/esogu/ros2_ws/build/detection/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/esogu/ros2_ws/src/detection', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'esogu', 'LC_TIME': 'tr_TR.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/esogu/ros2_ws/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/esogu', 'OLDPWD': '/home/esogu', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'diagnostic_updater_DIR': '/opt/ros/humble/share/diagnostic_updater', 'LC_MONETARY': 'tr_TR.UTF-8', 'SYSTEMD_EXEC_PID': '1845', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/esogu/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'esogu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'esogu', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/esogu-HP-ProDesk-490-G3-MT-Business-PC:@/tmp/.ICE-unix/1662,unix/esogu-HP-ProDesk-490-G3-MT-Business-PC:/tmp/.ICE-unix/1662', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'tr_TR.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/1b0febbe_b307_4fa9_91e3_a1ff0bca85a9', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'tr_TR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.J9TX32', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/esogu/ros2_ws/install/usb_cam:/home/esogu/ros2_ws/install/detection:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'tr_TR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'tr_TR.UTF-8', 'LC_IDENTIFICATION': 'tr_TR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/esogu/ros2_ws/build/detection', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/esogu/ros2_ws/build/detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esogu/ros2_ws/install/detection/lib/python3.10/site-packages:/home/esogu/ros2_ws/install/detection/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'tr_TR.UTF-8', 'LC_PAPER': 'tr_TR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/opt/ros/humble:/home/esogu/ros2_ws/install/usb_cam'}, 'shell': False}
+[0.675909] (realsense2_camera) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.678457] (realsense2_camera) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.684159] (realsense2_camera) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.693722] (realsense2_camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.702571] (-) TimerEvent: {}
+[0.705731] (realsense2_camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.716538] (realsense2_camera) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.767502] (realsense2_camera) StdoutLine: {'line': b'-- Found image_transport: 3.1.10 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[0.794368] (realsense2_camera) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.795723] (realsense2_camera) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.802642] (-) TimerEvent: {}
+[0.890231] (realsense2_camera) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.893516] (detection) StdoutLine: {'line': b'running egg_info\n'}
+[0.894155] (detection) StdoutLine: {'line': b'writing ../../build/detection/detection.egg-info/PKG-INFO\n'}
+[0.894422] (detection) StdoutLine: {'line': b'writing dependency_links to ../../build/detection/detection.egg-info/dependency_links.txt\n'}
+[0.894664] (detection) StdoutLine: {'line': b'writing entry points to ../../build/detection/detection.egg-info/entry_points.txt\n'}
+[0.894957] (detection) StdoutLine: {'line': b'writing requirements to ../../build/detection/detection.egg-info/requires.txt\n'}
+[0.895073] (detection) StdoutLine: {'line': b'writing top-level names to ../../build/detection/detection.egg-info/top_level.txt\n'}
+[0.896546] (detection) StdoutLine: {'line': b"reading manifest file '../../build/detection/detection.egg-info/SOURCES.txt'\n"}
+[0.897399] (detection) StdoutLine: {'line': b"writing manifest file '../../build/detection/detection.egg-info/SOURCES.txt'\n"}
+[0.897689] (detection) StdoutLine: {'line': b'running build\n'}
+[0.897818] (detection) StdoutLine: {'line': b'running build_py\n'}
+[0.898233] (detection) StdoutLine: {'line': b'running install\n'}
+[0.898594] (detection) StdoutLine: {'line': b'running install_lib\n'}
+[0.899830] (detection) StdoutLine: {'line': b'running install_data\n'}
+[0.900032] (detection) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.901575] (detection) StdoutLine: {'line': b"removing '/home/esogu/ros2_ws/install/detection/lib/python3.10/site-packages/detection-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.901935] (detection) StdoutLine: {'line': b'Copying ../../build/detection/detection.egg-info to /home/esogu/ros2_ws/install/detection/lib/python3.10/site-packages/detection-0.0.0-py3.10.egg-info\n'}
+[0.902716] (-) TimerEvent: {}
+[0.902927] (detection) StdoutLine: {'line': b'running install_scripts\n'}
+[0.921357] (detection) StdoutLine: {'line': b'Installing green_color_detection_node script to /home/esogu/ros2_ws/install/detection/lib/detection\n'}
+[0.921674] (detection) StdoutLine: {'line': b'Installing red_color_detection_node script to /home/esogu/ros2_ws/install/detection/lib/detection\n'}
+[0.921834] (detection) StdoutLine: {'line': b'Installing shape_detection script to /home/esogu/ros2_ws/install/detection/lib/detection\n'}
+[0.922137] (detection) StdoutLine: {'line': b"writing list of installed files to '/home/esogu/ros2_ws/build/detection/install.log'\n"}
+[0.943365] (detection) CommandEnded: {'returncode': 0}
+[0.947412] (realsense2_camera) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.11 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[0.949810] (detection) JobEnded: {'identifier': 'detection', 'rc': 0}
+[0.965611] (realsense2_camera) StdoutLine: {'line': b'-- Found realsense2_camera_msgs: 4.55.1 (/home/esogu/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake)\n'}
+[0.983428] (realsense2_camera) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.998719] (realsense2_camera) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.002817] (-) TimerEvent: {}
+[1.058306] (realsense2_camera) StdoutLine: {'line': b'-- Found diagnostic_updater: 4.0.2 (/opt/ros/humble/share/diagnostic_updater/cmake)\n'}
+[1.086094] (realsense2_camera) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") found components: core \n'}
+[1.087280] (realsense2_camera) StdoutLine: {'line': b'-- Build for ROS2 Humble\n'}
+[1.093063] (realsense2_camera) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[1.095406] (realsense2_camera) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[1.100405] (realsense2_camera) StdoutLine: {'line': b'-- Found ament_cmake_pytest: 1.3.11 (/opt/ros/humble/share/ament_cmake_pytest/cmake)\n'}
+[1.102924] (-) TimerEvent: {}
+[1.203188] (-) TimerEvent: {}
+[1.303460] (-) TimerEvent: {}
+[1.403719] (-) TimerEvent: {}
+[1.504045] (-) TimerEvent: {}
+[1.604361] (-) TimerEvent: {}
+[1.704578] (-) TimerEvent: {}
+[1.804859] (-) TimerEvent: {}
+[1.905170] (-) TimerEvent: {}
+[2.005484] (-) TimerEvent: {}
+[2.105768] (-) TimerEvent: {}
+[2.206023] (-) TimerEvent: {}
+[2.306375] (-) TimerEvent: {}
+[2.406651] (-) TimerEvent: {}
+[2.506940] (-) TimerEvent: {}
+[2.607238] (-) TimerEvent: {}
+[2.707509] (-) TimerEvent: {}
+[2.807789] (-) TimerEvent: {}
+[2.908054] (-) TimerEvent: {}
+[3.008367] (-) TimerEvent: {}
+[3.108616] (-) TimerEvent: {}
+[3.208879] (-) TimerEvent: {}
+[3.309175] (-) TimerEvent: {}
+[3.409452] (-) TimerEvent: {}
+[3.509720] (-) TimerEvent: {}
+[3.609982] (-) TimerEvent: {}
+[3.710291] (-) TimerEvent: {}
+[3.810856] (-) TimerEvent: {}
+[3.911291] (-) TimerEvent: {}
+[3.955708] (realsense2_camera) StdoutLine: {'line': b'-- rs_device_info:\n'}
+[3.955867] (realsense2_camera) StdoutLine: {'line': b'-- Device Name                   Serial Number       Firmware Version\n'}
+[3.955961] (realsense2_camera) StdoutLine: {'line': b'Intel RealSense D435I         843112074086        5.16.0.1\n'}
+[3.956050] (realsense2_camera) StdoutLine: {'line': b'\n'}
+[3.956149] (realsense2_camera) StdoutLine: {'line': b'-- D455 device found\n'}
+[4.011420] (-) TimerEvent: {}
+[4.111686] (-) TimerEvent: {}
+[4.211967] (-) TimerEvent: {}
+[4.312269] (-) TimerEvent: {}
+[4.412523] (-) TimerEvent: {}
+[4.512804] (-) TimerEvent: {}
+[4.613089] (-) TimerEvent: {}
+[4.713431] (-) TimerEvent: {}
+[4.813710] (-) TimerEvent: {}
+[4.913993] (-) TimerEvent: {}
+[5.014289] (-) TimerEvent: {}
+[5.114546] (-) TimerEvent: {}
+[5.214821] (-) TimerEvent: {}
+[5.315078] (-) TimerEvent: {}
+[5.415415] (-) TimerEvent: {}
+[5.515684] (-) TimerEvent: {}
+[5.615981] (-) TimerEvent: {}
+[5.716305] (-) TimerEvent: {}
+[5.816571] (-) TimerEvent: {}
+[5.916851] (-) TimerEvent: {}
+[6.017127] (-) TimerEvent: {}
+[6.117446] (-) TimerEvent: {}
+[6.217696] (-) TimerEvent: {}
+[6.267065] (realsense2_camera) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.296207] (realsense2_camera) StdoutLine: {'line': b'-- Generating done\n'}
+[6.303708] (realsense2_camera) StdoutLine: {'line': b'-- Build files have been written to: /home/esogu/ros2_ws/build/realsense2_camera\n'}
+[6.312620] (realsense2_camera) CommandEnded: {'returncode': 0}
+[6.314230] (realsense2_camera) JobProgress: {'identifier': 'realsense2_camera', 'progress': 'build'}
+[6.314492] (realsense2_camera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/esogu/ros2_ws/build/realsense2_camera', '--', '-j8', '-l8'], 'cwd': '/home/esogu/ros2_ws/build/realsense2_camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'esogu'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/esogu/ros2_ws/install/realsense2_camera_msgs/lib:/home/esogu/ros2_ws/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/esogu'), ('OLDPWD', '/home/esogu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('diagnostic_updater_DIR', '/opt/ros/humble/share/diagnostic_updater'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('SYSTEMD_EXEC_PID', '1845'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/esogu/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'esogu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'esogu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/esogu-HP-ProDesk-490-G3-MT-Business-PC:@/tmp/.ICE-unix/1662,unix/esogu-HP-ProDesk-490-G3-MT-Business-PC:/tmp/.ICE-unix/1662'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1b0febbe_b307_4fa9_91e3_a1ff0bca85a9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.J9TX32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/esogu/ros2_ws/install/realsense2_camera_msgs:/home/esogu/ros2_ws/install/usb_cam:/home/esogu/ros2_ws/install/detection:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/esogu/ros2_ws/build/realsense2_camera'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/esogu/ros2_ws/install/detection/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/esogu/ros2_ws/install/realsense2_camera_msgs:/opt/ros/humble:/home/esogu/ros2_ws/install/usb_cam:/home/esogu/ros2_ws/install/detection')]), 'shell': False}
+[6.317759] (-) TimerEvent: {}
+[6.370087] (realsense2_camera) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_node.dir/rclcpp_components/node_main_realsense2_camera_node.cpp.o\x1b[0m\n'}
+[6.370363] (realsense2_camera) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[6.370518] (realsense2_camera) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o\x1b[0m\n'}
+[6.370718] (realsense2_camera) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o\x1b[0m\n'}
+[6.370855] (realsense2_camera) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o\x1b[0m\n'}
+[6.371659] (realsense2_camera) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o\x1b[0m\n'}
+[6.373780] (realsense2_camera) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[6.374981] (realsense2_camera) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o\x1b[0m\n'}
+[6.419169] (-) TimerEvent: {}
+[6.519456] (-) TimerEvent: {}
+[6.619738] (-) TimerEvent: {}
+[6.720059] (-) TimerEvent: {}
+[6.820378] (-) TimerEvent: {}
+[6.920713] (-) TimerEvent: {}
+[7.022360] (-) TimerEvent: {}
+[7.125185] (-) TimerEvent: {}
+[7.225525] (-) TimerEvent: {}
+[7.325866] (-) TimerEvent: {}
+[7.426243] (-) TimerEvent: {}
+[7.446906] (realsense2_camera) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[7.495440] (realsense2_camera) StdoutLine: {'line': b'[ 40%] Built target gtest_main\n'}
+[7.508795] (realsense2_camera) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.o\x1b[0m\n'}
+[7.526345] (-) TimerEvent: {}
+[7.627190] (-) TimerEvent: {}
+[7.727513] (-) TimerEvent: {}
+[7.829298] (-) TimerEvent: {}
+[7.929617] (-) TimerEvent: {}
+[8.029945] (-) TimerEvent: {}
+[8.130261] (-) TimerEvent: {}
+[8.230572] (-) TimerEvent: {}
+[8.330886] (-) TimerEvent: {}
+[8.432182] (-) TimerEvent: {}
+[8.532485] (-) TimerEvent: {}
+[8.632805] (-) TimerEvent: {}
+[8.735181] (-) TimerEvent: {}
+[8.835502] (-) TimerEvent: {}
+[8.935814] (-) TimerEvent: {}
+[9.036144] (-) TimerEvent: {}
+[9.136471] (-) TimerEvent: {}
+[9.236780] (-) TimerEvent: {}
+[9.337096] (-) TimerEvent: {}
+[9.437421] (-) TimerEvent: {}
+[9.540183] (-) TimerEvent: {}
+[9.640484] (-) TimerEvent: {}
+[9.740794] (-) TimerEvent: {}
+[9.841109] (-) TimerEvent: {}
+[9.941453] (-) TimerEvent: {}
+[10.041773] (-) TimerEvent: {}
+[10.142088] (-) TimerEvent: {}
+[10.242406] (-) TimerEvent: {}
+[10.342719] (-) TimerEvent: {}
+[10.446183] (-) TimerEvent: {}
+[10.546492] (-) TimerEvent: {}
+[10.646796] (-) TimerEvent: {}
+[10.747126] (-) TimerEvent: {}
+[10.847439] (-) TimerEvent: {}
+[10.947746] (-) TimerEvent: {}
+[11.048037] (-) TimerEvent: {}
+[11.148409] (-) TimerEvent: {}
+[11.250181] (-) TimerEvent: {}
+[11.350495] (-) TimerEvent: {}
+[11.450812] (-) TimerEvent: {}
+[11.551138] (-) TimerEvent: {}
+[11.651470] (-) TimerEvent: {}
+[11.752175] (-) TimerEvent: {}
+[11.855347] (-) TimerEvent: {}
+[11.955698] (-) TimerEvent: {}
+[12.056024] (-) TimerEvent: {}
+[12.101241] (realsense2_camera) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable realsense2_camera_node\x1b[0m\n'}
+[12.156140] (-) TimerEvent: {}
+[12.260180] (-) TimerEvent: {}
+[12.298544] (realsense2_camera) StdoutLine: {'line': b'[ 50%] Built target realsense2_camera_node\n'}
+[12.311823] (realsense2_camera) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o\x1b[0m\n'}
+[12.360285] (-) TimerEvent: {}
+[12.460607] (-) TimerEvent: {}
+[12.560975] (-) TimerEvent: {}
+[12.661291] (-) TimerEvent: {}
+[12.761633] (-) TimerEvent: {}
+[12.862007] (-) TimerEvent: {}
+[12.944505] (realsense2_camera) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o\x1b[0m\n'}
+[12.962111] (-) TimerEvent: {}
+[13.062437] (-) TimerEvent: {}
+[13.162763] (-) TimerEvent: {}
+[13.263100] (-) TimerEvent: {}
+[13.364321] (-) TimerEvent: {}
+[13.464646] (-) TimerEvent: {}
+[13.564981] (-) TimerEvent: {}
+[13.666310] (-) TimerEvent: {}
+[13.766639] (-) TimerEvent: {}
+[13.866979] (-) TimerEvent: {}
+[13.970181] (-) TimerEvent: {}
+[14.070512] (-) TimerEvent: {}
+[14.170836] (-) TimerEvent: {}
+[14.271177] (-) TimerEvent: {}
+[14.371509] (-) TimerEvent: {}
+[14.471837] (-) TimerEvent: {}
+[14.572180] (-) TimerEvent: {}
+[14.672493] (-) TimerEvent: {}
+[14.772819] (-) TimerEvent: {}
+[14.873152] (-) TimerEvent: {}
+[14.973631] (-) TimerEvent: {}
+[15.077187] (-) TimerEvent: {}
+[15.177502] (-) TimerEvent: {}
+[15.277831] (-) TimerEvent: {}
+[15.378164] (-) TimerEvent: {}
+[15.478495] (-) TimerEvent: {}
+[15.578817] (-) TimerEvent: {}
+[15.679154] (-) TimerEvent: {}
+[15.779486] (-) TimerEvent: {}
+[15.879809] (-) TimerEvent: {}
+[15.980187] (-) TimerEvent: {}
+[16.080630] (-) TimerEvent: {}
+[16.180955] (-) TimerEvent: {}
+[16.285186] (-) TimerEvent: {}
+[16.385525] (-) TimerEvent: {}
+[16.485848] (-) TimerEvent: {}
+[16.586175] (-) TimerEvent: {}
+[16.686493] (-) TimerEvent: {}
+[16.786819] (-) TimerEvent: {}
+[16.887161] (-) TimerEvent: {}
+[16.977213] (realsense2_camera) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o\x1b[0m\n'}
+[16.987268] (-) TimerEvent: {}
+[17.087590] (-) TimerEvent: {}
+[17.187898] (-) TimerEvent: {}
+[17.288192] (-) TimerEvent: {}
+[17.335940] (realsense2_camera) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[17.388301] (-) TimerEvent: {}
+[17.391072] (realsense2_camera) StdoutLine: {'line': b'[ 68%] Built target gtest\n'}
+[17.404035] (realsense2_camera) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o\x1b[0m\n'}
+[17.488410] (-) TimerEvent: {}
+[17.588745] (-) TimerEvent: {}
+[17.689092] (-) TimerEvent: {}
+[17.789408] (-) TimerEvent: {}
+[17.889746] (-) TimerEvent: {}
+[17.991188] (-) TimerEvent: {}
+[18.091524] (-) TimerEvent: {}
+[18.131381] (realsense2_camera) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/gtest_template.dir/test/gtest_template.cpp.o\x1b[0m\n'}
+[18.191630] (-) TimerEvent: {}
+[18.295347] (-) TimerEvent: {}
+[18.395688] (-) TimerEvent: {}
+[18.496032] (-) TimerEvent: {}
+[18.596370] (-) TimerEvent: {}
+[18.696697] (-) TimerEvent: {}
+[18.797008] (-) TimerEvent: {}
+[18.897355] (-) TimerEvent: {}
+[18.997691] (-) TimerEvent: {}
+[19.098027] (-) TimerEvent: {}
+[19.198375] (-) TimerEvent: {}
+[19.298722] (-) TimerEvent: {}
+[19.399071] (-) TimerEvent: {}
+[19.426198] (realsense2_camera) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX executable gtest_template\x1b[0m\n'}
+[19.499192] (-) TimerEvent: {}
+[19.589370] (realsense2_camera) StdoutLine: {'line': b'[ 81%] Built target gtest_template\n'}
+[19.599299] (-) TimerEvent: {}
+[19.602732] (realsense2_camera) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.o\x1b[0m\n'}
+[19.699403] (-) TimerEvent: {}
+[19.799720] (-) TimerEvent: {}
+[19.900051] (-) TimerEvent: {}
+[20.000390] (-) TimerEvent: {}
+[20.100727] (-) TimerEvent: {}
+[20.201071] (-) TimerEvent: {}
+[20.301395] (-) TimerEvent: {}
+[20.401725] (-) TimerEvent: {}
+[20.502049] (-) TimerEvent: {}
+[20.602377] (-) TimerEvent: {}
+[20.706334] (-) TimerEvent: {}
+[20.741067] (realsense2_camera) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o\x1b[0m\n'}
+[20.806440] (-) TimerEvent: {}
+[20.906737] (-) TimerEvent: {}
+[20.927680] (realsense2_camera) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.o\x1b[0m\n'}
+[21.006852] (-) TimerEvent: {}
+[21.107173] (-) TimerEvent: {}
+[21.207477] (-) TimerEvent: {}
+[21.307793] (-) TimerEvent: {}
+[21.408166] (-) TimerEvent: {}
+[21.508530] (-) TimerEvent: {}
+[21.608860] (-) TimerEvent: {}
+[21.709185] (-) TimerEvent: {}
+[21.812347] (-) TimerEvent: {}
+[21.912675] (-) TimerEvent: {}
+[22.013020] (-) TimerEvent: {}
+[22.113387] (-) TimerEvent: {}
+[22.213715] (-) TimerEvent: {}
+[22.314041] (-) TimerEvent: {}
+[22.414386] (-) TimerEvent: {}
+[22.514737] (-) TimerEvent: {}
+[22.615077] (-) TimerEvent: {}
+[22.715418] (-) TimerEvent: {}
+[22.817330] (-) TimerEvent: {}
+[22.917655] (-) TimerEvent: {}
+[23.017982] (-) TimerEvent: {}
+[23.118319] (-) TimerEvent: {}
+[23.218647] (-) TimerEvent: {}
+[23.319081] (-) TimerEvent: {}
+[23.423283] (-) TimerEvent: {}
+[23.523557] (-) TimerEvent: {}
+[23.623988] (-) TimerEvent: {}
+[23.724405] (-) TimerEvent: {}
+[23.824715] (-) TimerEvent: {}
+[23.925145] (-) TimerEvent: {}
+[24.025559] (-) TimerEvent: {}
+[24.125930] (-) TimerEvent: {}
+[24.229180] (-) TimerEvent: {}
+[24.329606] (-) TimerEvent: {}
+[24.429936] (-) TimerEvent: {}
+[24.530258] (-) TimerEvent: {}
+[24.630643] (-) TimerEvent: {}
+[24.730979] (-) TimerEvent: {}
+[24.833180] (-) TimerEvent: {}
+[24.933492] (-) TimerEvent: {}
+[25.033807] (-) TimerEvent: {}
+[25.134134] (-) TimerEvent: {}
+[25.234446] (-) TimerEvent: {}
+[25.334745] (-) TimerEvent: {}
+[25.435039] (-) TimerEvent: {}
+[25.535382] (-) TimerEvent: {}
+[25.635655] (-) TimerEvent: {}
+[25.735965] (-) TimerEvent: {}
+[25.836313] (-) TimerEvent: {}
+[25.936611] (-) TimerEvent: {}
+[26.036909] (-) TimerEvent: {}
+[26.137180] (-) TimerEvent: {}
+[26.237482] (-) TimerEvent: {}
+[26.337778] (-) TimerEvent: {}
+[26.438087] (-) TimerEvent: {}
+[26.538407] (-) TimerEvent: {}
+[26.638720] (-) TimerEvent: {}
+[26.739026] (-) TimerEvent: {}
+[26.839337] (-) TimerEvent: {}
+[26.939641] (-) TimerEvent: {}
+[27.039942] (-) TimerEvent: {}
+[27.140281] (-) TimerEvent: {}
+[27.240580] (-) TimerEvent: {}
+[27.340891] (-) TimerEvent: {}
+[27.441183] (-) TimerEvent: {}
+[27.541474] (-) TimerEvent: {}
+[27.641776] (-) TimerEvent: {}
+[27.742075] (-) TimerEvent: {}
+[27.842406] (-) TimerEvent: {}
+[27.942704] (-) TimerEvent: {}
+[28.043018] (-) TimerEvent: {}
+[28.143356] (-) TimerEvent: {}
+[28.243650] (-) TimerEvent: {}
+[28.343939] (-) TimerEvent: {}
+[28.444264] (-) TimerEvent: {}
+[28.544558] (-) TimerEvent: {}
+[28.644871] (-) TimerEvent: {}
+[28.745196] (-) TimerEvent: {}
+[28.845492] (-) TimerEvent: {}
+[28.945801] (-) TimerEvent: {}
+[29.046095] (-) TimerEvent: {}
+[29.146429] (-) TimerEvent: {}
+[29.246736] (-) TimerEvent: {}
+[29.347032] (-) TimerEvent: {}
+[29.447367] (-) TimerEvent: {}
+[29.547665] (-) TimerEvent: {}
+[29.647959] (-) TimerEvent: {}
+[29.748279] (-) TimerEvent: {}
+[29.848568] (-) TimerEvent: {}
+[29.948870] (-) TimerEvent: {}
+[30.049202] (-) TimerEvent: {}
+[30.149521] (-) TimerEvent: {}
+[30.176000] (realsense2_camera) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera.so\x1b[0m\n'}
+[30.249656] (-) TimerEvent: {}
+[30.349908] (-) TimerEvent: {}
+[30.450224] (-) TimerEvent: {}
+[30.550517] (-) TimerEvent: {}
+[30.623097] (realsense2_camera) StdoutLine: {'line': b'[100%] Built target realsense2_camera\n'}
+[30.634230] (realsense2_camera) CommandEnded: {'returncode': 0}
+[30.634903] (realsense2_camera) JobProgress: {'identifier': 'realsense2_camera', 'progress': 'install'}
+[30.635211] (realsense2_camera) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/esogu/ros2_ws/build/realsense2_camera'], 'cwd': '/home/esogu/ros2_ws/build/realsense2_camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'esogu'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/esogu/ros2_ws/install/realsense2_camera_msgs/lib:/home/esogu/ros2_ws/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/esogu'), ('OLDPWD', '/home/esogu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('diagnostic_updater_DIR', '/opt/ros/humble/share/diagnostic_updater'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('SYSTEMD_EXEC_PID', '1845'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/esogu/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'esogu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'esogu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/esogu-HP-ProDesk-490-G3-MT-Business-PC:@/tmp/.ICE-unix/1662,unix/esogu-HP-ProDesk-490-G3-MT-Business-PC:/tmp/.ICE-unix/1662'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1b0febbe_b307_4fa9_91e3_a1ff0bca85a9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.J9TX32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/esogu/ros2_ws/install/realsense2_camera_msgs:/home/esogu/ros2_ws/install/usb_cam:/home/esogu/ros2_ws/install/detection:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/esogu/ros2_ws/build/realsense2_camera'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/esogu/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/esogu/ros2_ws/install/detection/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/esogu/ros2_ws/install/realsense2_camera_msgs:/opt/ros/humble:/home/esogu/ros2_ws/install/usb_cam:/home/esogu/ros2_ws/install/detection')]), 'shell': False}
+[30.643516] (realsense2_camera) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[30.643750] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node\n'}
+[30.644370] (realsense2_camera) StdoutLine: {'line': b'-- Set runtime path of "/home/esogu/ros2_ws/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node" to ""\n'}
+[30.644553] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/lib/librealsense2_camera.so\n'}
+[30.647229] (realsense2_camera) StdoutLine: {'line': b'-- Set runtime path of "/home/esogu/ros2_ws/install/realsense2_camera/lib/librealsense2_camera.so" to ""\n'}
+[30.647443] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/include\n'}
+[30.647515] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/include/gl_window.h\n'}
+[30.647720] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/include/ros_utils.h\n'}
+[30.647801] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/include/ros_sensor.h\n'}
+[30.647978] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/include/constants.h\n'}
+[30.648051] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/include/dynamic_params.h\n'}
+[30.648150] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/include/base_realsense_node.h\n'}
+[30.648311] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/include/sensor_params.h\n'}
+[30.648552] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/include/named_filter.h\n'}
+[30.648784] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/include/realsense_node_factory.h\n'}
+[30.648883] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/include/image_publisher.h\n'}
+[30.648962] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/include/profile_manager.h\n'}
+[30.649036] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/include/ros_param_backend.h\n'}
+[30.649246] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch\n'}
+[30.649344] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_intra_process_demo_launch.py\n'}
+[30.649426] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/default.rviz\n'}
+[30.649626] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_launch.py\n'}
+[30.649793] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_multi_camera_launch.py\n'}
+[30.649942] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples\n'}
+[30.650067] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag\n'}
+[30.650195] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag/rs_launch_from_rosbag.py\n'}
+[30.650323] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag/README.md\n'}
+[30.650454] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera\n'}
+[30.650547] (-) TimerEvent: {}
+[30.650727] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rs_dual_camera_launch.py\n'}
+[30.650852] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/README.md\n'}
+[30.651021] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rviz\n'}
+[30.651201] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rviz/dual_camera_pointcloud.rviz\n'}
+[30.651330] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file\n'}
+[30.651420] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/config\n'}
+[30.651513] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/config/config.yaml\n'}
+[30.651625] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/README.md\n'}
+[30.651741] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/rs_launch_get_params_from_yaml.py\n'}
+[30.651835] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/align_depth\n'}
+[30.651945] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/align_depth/README.md\n'}
+[30.652062] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/align_depth/rs_align_depth_launch.py\n'}
+[30.652230] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud\n'}
+[30.652320] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_pointcloud_launch.py\n'}
+[30.652414] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_d455_pointcloud_launch.py\n'}
+[30.652602] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_d405_pointcloud_launch.py\n'}
+[30.652743] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/README.md\n'}
+[30.652839] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz\n'}
+[30.652931] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz/urdf_pointcloud.rviz\n'}
+[30.653049] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz/pointcloud.rviz\n'}
+[30.653179] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.sh\n'}
+[30.653239] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.dsv\n'}
+[30.653395] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/package_run_dependencies/realsense2_camera\n'}
+[30.653587] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/parent_prefix_path/realsense2_camera\n'}
+[30.653819] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.sh\n'}
+[30.653964] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.dsv\n'}
+[30.654107] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/path.sh\n'}
+[30.654381] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/path.dsv\n'}
+[30.654573] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.bash\n'}
+[30.654727] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.sh\n'}
+[30.654874] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.zsh\n'}
+[30.655042] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.dsv\n'}
+[30.655250] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.dsv\n'}
+[30.655457] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/packages/realsense2_camera\n'}
+[30.655652] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/rclcpp_components/realsense2_camera\n'}
+[30.655894] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[30.656073] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[30.656322] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[30.656518] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig.cmake\n'}
+[30.656717] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig-version.cmake\n'}
+[30.656848] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/esogu/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.xml\n'}
+[30.659483] (realsense2_camera) CommandEnded: {'returncode': 0}
+[30.672825] (realsense2_camera) JobEnded: {'identifier': 'realsense2_camera', 'rc': 0}
+[30.673803] (-) EventReactorShutdown: {}

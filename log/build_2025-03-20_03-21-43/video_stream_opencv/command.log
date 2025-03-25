@@ -1,0 +1,2 @@
+Invoking command in '/home/esogu/ros2_ws/build/video_stream_opencv': /usr/bin/cmake /home/esogu/ros2_ws/src/video_stream_opencv -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/esogu/ros2_ws/install/video_stream_opencv
+Invoked command in '/home/esogu/ros2_ws/build/video_stream_opencv' returned '1': /usr/bin/cmake /home/esogu/ros2_ws/src/video_stream_opencv -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/esogu/ros2_ws/install/video_stream_opencv

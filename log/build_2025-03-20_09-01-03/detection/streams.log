@@ -1,0 +1,24 @@
+[0.260s] Invoking command in '/home/esogu/ros2_ws/src/detection': PYTHONPATH=/home/esogu/ros2_ws/build/detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esogu/ros2_ws/install/detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/detection build --build-base /home/esogu/ros2_ws/build/detection/build install --record /home/esogu/ros2_ws/build/detection/install.log --single-version-externally-managed install_data
+[0.383s] running egg_info
+[0.383s] writing ../../build/detection/detection.egg-info/PKG-INFO
+[0.384s] writing dependency_links to ../../build/detection/detection.egg-info/dependency_links.txt
+[0.384s] writing entry points to ../../build/detection/detection.egg-info/entry_points.txt
+[0.384s] writing requirements to ../../build/detection/detection.egg-info/requires.txt
+[0.384s] writing top-level names to ../../build/detection/detection.egg-info/top_level.txt
+[0.385s] reading manifest file '../../build/detection/detection.egg-info/SOURCES.txt'
+[0.385s] writing manifest file '../../build/detection/detection.egg-info/SOURCES.txt'
+[0.385s] running build
+[0.385s] running build_py
+[0.386s] copying detection/shape_detection.py -> /home/esogu/ros2_ws/build/detection/build/lib/detection
+[0.386s] running install
+[0.386s] running install_lib
+[0.386s] copying /home/esogu/ros2_ws/build/detection/build/lib/detection/shape_detection.py -> /home/esogu/ros2_ws/install/detection/lib/python3.10/site-packages/detection
+[0.386s] byte-compiling /home/esogu/ros2_ws/install/detection/lib/python3.10/site-packages/detection/shape_detection.py to shape_detection.cpython-310.pyc
+[0.387s] running install_data
+[0.387s] running install_egg_info
+[0.388s] removing '/home/esogu/ros2_ws/install/detection/lib/python3.10/site-packages/detection-0.0.0-py3.10.egg-info' (and everything under it)
+[0.388s] Copying ../../build/detection/detection.egg-info to /home/esogu/ros2_ws/install/detection/lib/python3.10/site-packages/detection-0.0.0-py3.10.egg-info
+[0.389s] running install_scripts
+[0.401s] Installing shape_detection script to /home/esogu/ros2_ws/install/detection/lib/detection
+[0.401s] writing list of installed files to '/home/esogu/ros2_ws/build/detection/install.log'
+[0.414s] Invoked command in '/home/esogu/ros2_ws/src/detection' returned '0': PYTHONPATH=/home/esogu/ros2_ws/build/detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esogu/ros2_ws/install/detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/detection build --build-base /home/esogu/ros2_ws/build/detection/build install --record /home/esogu/ros2_ws/build/detection/install.log --single-version-externally-managed install_data
