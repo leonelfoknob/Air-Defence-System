@@ -19,8 +19,10 @@ class RedColorDetectionNode(Node):
         self.bridge = CvBridge()
 
         # Subscribe to the /image topic to get the video stream
-        #self.create_subscription(Image, '/image_raw', self.image_callback, 10)#get image from usb_cam pakage
-        self.create_subscription(Image, '/camera/camera/color/image_raw', self.image_callback, 10)#get image from intel realsence 435i pakage
+
+        self.create_subscription(Image, '/camera1/image_raw', self.image_callback, 10)#get image from usb_cam pakage when you run with launch
+        #self.create_subscription(Image, '/image_raw', self.image_callback, 10)#get image from usb_cam pakage when you run with node
+        #self.create_subscription(Image, '/camera/camera/color/image_raw', self.image_callback, 10)#get image from intel realsence 435i pakage
 
         # Define the center and limit for drawing reference lines
         self.limit = 50

@@ -11,7 +11,8 @@ class ShapeDetection(Node):
         self.bridge = CvBridge()
         
         # Subscribe to the '/red_mask' topic to get the binary mask from red color detection
-        self.image_sub = self.create_subscription(Image, '/red_mask', self.image_callback, 10)
+        #self.image_sub = self.create_subscription(Image, '/red_mask', self.image_callback, 10)# red color mask
+        self.image_sub = self.create_subscription(Image, '/green_mask', self.image_callback, 10) #green color mask
         
         # Publisher for the output image with shapes detected
         self.image_pub = self.create_publisher(Image, 'shapes/image', 10)

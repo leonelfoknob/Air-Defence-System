@@ -19,7 +19,10 @@ class GreenColorDetectionNode(Node):
         self.bridge = CvBridge()
 
         # Subscribe to the /image_raw topic to get the video stream
-        self.create_subscription(Image, '/image_raw', self.image_callback, 10)
+
+        self.create_subscription(Image, '/camera1/image_raw', self.image_callback, 10)#get image from usb_cam pakage when you run with launch file
+        #self.create_subscription(Image, '/image_raw', self.image_callback, 10)#get image from usb_cam pakage when you run with run
+        #self.create_subscription(Image, '/camera/camera/color/image_raw', self.image_callback, 10)#get image from intel realsence 435i pakage
 
         # Define the center and limit for drawing reference lines
         self.limit = 50
@@ -89,6 +92,7 @@ class GreenColorDetectionNode(Node):
         cv2.line(frame, (self.center_x - self.limit, self.center_y - self.limit), (self.center_x - self.limit, self.center_y + self.limit), (0, 255, 0), 2)
         cv2.line(frame, (self.center_x - self.limit, self.center_y + self.limit), (self.center_x + self.limit, self.center_y + self.limit), (0, 255, 0), 2)
         cv2.line(frame, (self.center_x - self.limit, self.center_y - self.limit), (self.center_x + self.limit, self.center_y - self.limit), (0, 255, 0), 2)
+        cv2.circle(frame, (self.center_x, self.center_y), 5, (255, 0, 0), -1)
         
         # Publish green color center
         if max_green_contour is not None:
